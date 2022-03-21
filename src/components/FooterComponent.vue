@@ -1,6 +1,6 @@
 <template>
  <div class='footer'>
-    <div class='footer-item'><a id='link-footer' href="https://github.com/BYUCS260/lab-1-photography-website-perrierr">Source</a></div>
+    <div class='footer-item'><a id='link-footer' href="https://github.com/perrierr/Creative-Project-3">Source</a></div>
   </div>
 </template>
 
