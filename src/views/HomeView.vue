@@ -1,42 +1,37 @@
 <template>
-  <div class="home">
-    <h1 id="home-h1">Start Making Goals Today</h1>
-    <h2 id="home-h2">And Live a Meaningful Life</h2>
-    <div class="footer">
-      <FooterComponent />
-    </div>
+  <div class="home-grid-container">
+    <img class='photo-grid-col-2' src='@/assets/success.png'/>
   </div>
 </template>
 
-<script>
-
-import FooterComponent from '@/components/FooterComponent.vue'
-
-export default {
-  name: 'summer-view',
-  components: {
-    FooterComponent
-  },
-}
-</script>
-
-
 <style scoped>
-  #home-h1 {
-    padding-top: 120px;
-    margin-bottom: 30px;
-  }
 
-  .home {
-  height: 100vh;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #af829b;
-  background-image: url("../assets/logo.jpeg");
-  background-size: cover;
+.home-grid-container {
+    --num-cols: 1;
+    --row-height: 450px; 
+    display: flex;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
 }
 
+.home-grid-container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-grid-col-2 {
+    grid-column: span 1;
+}
+
+img {
+  display: block;
+  margin-top: 105px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 40%;
+}
 
 </style>

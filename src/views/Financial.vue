@@ -6,7 +6,7 @@
 
 <script>
 // @ is an alias to /src
-import FinancialComponent from '@/components/FinancialComponent.vue'
+import FinancialComponent from '@/components/FinancialComponent'
 
 export default {
   name: 'financial-view',
@@ -23,12 +23,8 @@ export default {
 
 <style scoped>
 .financial {
-  height: 200vh;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  background-image: url("../assets/logo.jpeg");
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

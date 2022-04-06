@@ -22,13 +22,10 @@ export default {
 </script>
 
 <style scoped>
+
 .summer {
-  height: 200vh;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  background-image: url("../assets/logo.jpeg");
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
