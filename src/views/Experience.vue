@@ -1,17 +1,17 @@
 <template>
   <div class="experience">
-    <ExperienceComponent :products="products" />
+    <GoalComponent page="Experience" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import ExperienceComponent from '@/components/ExperienceComponent.vue'
+import GoalComponent from '@/components/GoalComponent.vue'
 
 export default {
   name: 'experience-view',
   components: {
-    ExperienceComponent
+    GoalComponent
   },
   computed: {
   products() {

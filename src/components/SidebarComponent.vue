@@ -21,34 +21,9 @@
                     Financial
                 </div>
             </router-link>
-            <router-link to="/emotional" active-class="active" tag="button" class="side-btn">
-                <div class="link-container">
-                    Emotional
-                </div>
-            </router-link>
             <router-link to="/intellectual" active-class="active" tag="button" class="side-btn">
                 <div class="link-container">
                     Intellectual
-                </div>
-            </router-link>
-            <router-link to="/health" active-class="active" tag="button" class="side-btn">
-                <div class="link-container">
-                    Health
-                </div>
-            </router-link>
-            <router-link to="/spiritual" active-class="active" tag="button" class="side-btn">
-                <div class="link-container">
-                    Spiritual
-                </div>
-            </router-link>
-            <router-link to="/family" active-class="active" tag="button" class="side-btn">
-                <div class="link-container">
-                    Family
-                </div>
-            </router-link>
-            <router-link to="/summer" active-class="active" tag="button" class="side-btn">
-                <div class="link-container">
-                    Summer
                 </div>
             </router-link>
         </div>

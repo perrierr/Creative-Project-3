@@ -33,10 +33,10 @@ const routes = [
       // path: '/health',
       // component: () => import('../views/HealthView')
       // },
-      // {
-      // path: '/intellectual',
-      // component: () => import('../views/IntellectualView')
-      // },
+      {
+      path: '/intellectual',
+      component: () => import('../views/IntellectualView')
+      },
       // {
       // path: '/spiritual',
       // component: () => import('../views/SpiritualView')

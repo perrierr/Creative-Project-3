@@ -1,17 +1,17 @@
 <template>
   <div class="financial">
-    <FinancialComponent :products="products" />
+    <GoalComponent page="Financial"  />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import FinancialComponent from '@/components/FinancialComponent'
+import GoalComponent from '@/components/GoalComponent'
 
 export default {
   name: 'financial-view',
   components: {
-    FinancialComponent
+    GoalComponent
   },
   computed: {
   products() {

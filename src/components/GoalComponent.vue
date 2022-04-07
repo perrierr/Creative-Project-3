@@ -1,5 +1,6 @@
 <template>
 <div id="container">
+  {{page}} : pageType
   <div class="d-flex">
     <input v-model="goal" type="text" class="form-control" placeholder="Enter goal">
     <input v-model="status" class="form-control" placeholder="Enter status" />
@@ -95,9 +96,9 @@ transition-duration: 0.4s;
 <script>
 import axios from 'axios';
 export default {
+  props: {page: String},
   data() {
     return {
-      page: "Experience",
       goalId: '',
       goal: '',
       date: '',
@@ -191,12 +192,6 @@ export default {
     this.status = this.goals[index].status;
     this.editedGoal = index;
     },
-    
-    changeStatus(index){
-      let newIndex = this.availableStatuses.indexOf(this.goals[index].status);
-      if(++newIndex > 2) newIndex = 0;
-      this.goals[index].status = this.availableStatuses[newIndex];
-    }
   }
 };
 </script>
